@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <TargetFrameworks>net5.0;net6.0</TargetFrameworks>
+        <LangVersion>10</LangVersion>
+        <ApplicationIcon>Resources\icon.ico</ApplicationIcon>
+        <Title>Weber Result TxT Parser</Title>
+        <Authors>Sascha Krumbach</Authors>
+        <Description>It's a drag and drop parser which converts the Weber Results into Json and CSV</Description>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <None Update="DummyData.TXT">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="CsvHelper" Version="30.0.1" />
+    </ItemGroup>
+
+</Project>
